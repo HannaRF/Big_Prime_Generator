@@ -3,15 +3,15 @@
 
 ## Crivo de Erastótenes
 ### Crivo de Sundaram e Crivo de Atkin (talvez)
-* [fonte](https://www.baeldung.com/cs/prime-number-algorithms)
+* [prime number algorithms](https://www.baeldung.com/cs/prime-number-algorithms)
 
 ## Generador de Primos grandes para o algoritmo RSA 
-* [fonte 1](https://www.geeksforgeeks.org/how-to-generate-large-prime-numbers-for-rsa-algorithm/)
-* [fonte 2](https://medium.com/@prudywsh/how-to-generate-big-prime-numbers-miller-rabin-49e6e6af32fb)
+* [geeksforgeeks how to generate large prime numbers](https://www.geeksforgeeks.org/how-to-generate-large-prime-numbers-for-rsa-algorithm/)
+* [medium how to generate large prime numbers](https://medium.com/@prudywsh/how-to-generate-big-prime-numbers-miller-rabin-49e6e6af32fb)
 
 ## Comparar com sites e pacotes próprios
 
-* [site 1](https://bigprimes.org/how-it-works)
+* [bigprimes](https://bigprimes.org/how-it-works)
 * pycrypto getPrime module
 
 ## Outros sites:
