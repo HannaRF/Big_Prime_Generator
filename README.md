@@ -1,6 +1,8 @@
 
 # Big_Prime_Generator
 
+Relatório disponícel [aqui](https://www.overleaf.com/read/gtqbgfrspgwq).
+
 ## Crivo de Erastótenes
 ### Crivo de Sundaram e Crivo de Atkin (talvez)
 * [prime number algorithms](https://www.baeldung.com/cs/prime-number-algorithms)
