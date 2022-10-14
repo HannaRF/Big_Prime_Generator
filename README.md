@@ -1,10 +1,10 @@
 
 # Big_Prime_Generator
 
-Relatório disponícel [aqui](https://www.overleaf.com/read/gtqbgfrspgwq).
+Relatório disponível [aqui](https://www.overleaf.com/read/gtqbgfrspgwq).
 
 ## Crivo de Erastótenes
-### Crivo de Sundaram e Crivo de Atkin (talvez)
+( talvez Crivo de Sundaram e Crivo de Atkin )
 * [prime number algorithms](https://www.baeldung.com/cs/prime-number-algorithms)
 
 ## Generador de Primos grandes para o algoritmo RSA 
