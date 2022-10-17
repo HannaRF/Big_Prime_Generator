@@ -1,4 +1,4 @@
-from primos_grandes import BigPrime
+from primos_grandes import BigPrimeLV, BigPrimeMC
 from Crypto.Util import number
 
 # Crivos??
@@ -7,8 +7,11 @@ from Crypto.Util import number
 
 n = 128
 
-# Primo grande
-a = BigPrime(n)
+# Primos grandes Las Vegas
+a = BigPrimeLV(n)
+
+# Primo grande Monte Carlo
+b = BigPrimeMC(n)
 
 # Primos grandes PyCrypto
-b = number.getPrime(n)
+c = number.getPrime(n)

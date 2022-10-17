@@ -2,18 +2,36 @@ import random
 from crivos import crivo_de_eratostenes
 
 class BigPrime:
+    def nBitRandom(self, bitSize):
+        """
+        Dado N bits, retorna um número aleatório de N bits
+        """
+        return(random.randrange(2**(bitSize-1)+1, 2**bitSize-1))
+
+    def __str__(self): return str(self.valor)
+
+
+class BigPrimeLV(BigPrime):
+    def __init__(self, bitSize):
+        self.bitSize = bitSize
+        while True:
+            self.valor = self.nBitRandom(self.bitSize)
+            if self.is_prime(self.valor): break
+
+    def is_prime(n):
+        if not(n%2): return False
+        for i in range(3, n**(1/2), 2):
+            if not(n%i): return False
+        return True
+
+
+class BigPrimeMC(BigPrime):
     def __init__(self, bitSize, primesUntil=1000, trials=20):
         self.bitSize = bitSize
         while True:
             self.valor = self.nBitRandom(self.bitSize)
             if self.lowLevelPrime(self.valor, primesUntil):
                 if self.isMillerRabin(self.valor, trials): break
-
-    def nBitRandom(self, bitSize):
-        """
-        Dado N bits, retorna um número aleatório de N bits
-        """
-        return(random.randrange(2**(bitSize-1)+1, 2**bitSize-1))
 
     def lowLevelPrime(self, prime_candidate, primesUntil=1000):
         """"
@@ -47,5 +65,3 @@ class BigPrime:
             if self.trialComposite(prime_candidate, round_tester,
                 evenComponent, maxDivisionsByTwo): return False
         return True
-
-    def __str__(self): return str(self.valor)\
