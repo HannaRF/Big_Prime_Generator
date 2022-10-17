@@ -18,9 +18,9 @@ class BigPrimeLV(BigPrime):
             self.valor = self.nBitRandom(self.bitSize)
             if self.is_prime(self.valor): break
 
-    def is_prime(n):
+    def is_prime(self, n):
         if not(n%2): return False
-        for i in range(3, n**(1/2), 2):
+        for i in range(3, int(n**(1/2)), 2):
             if not(n%i): return False
         return True
 
