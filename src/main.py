@@ -4,9 +4,6 @@ from Crypto.Util import number
 import time
 
 
-
-# Crivos??
-
 tam = list(range(4,44,2))
 l1, l2, l3 = [], [], []
 start=time.time()
@@ -40,6 +37,3 @@ plt.ylabel("Tempo (ms)")
 plt.xlabel("Tamanho do número (bits)")
 plt.legend()
 plt.show()
-
-
-# Plotar para diferentes N

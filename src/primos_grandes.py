@@ -1,7 +1,7 @@
 import random
 from crivos import crivo_de_eratostenes
 
-class BigPrime:
+class BigNumber:
     def nBitRandom(self, bitSize):
         """
         Dado N bits, retorna um número aleatório de N bits
@@ -11,7 +11,7 @@ class BigPrime:
     def __str__(self): return str(self.valor)
 
 
-class BigPrimeLV(BigPrime):
+class BigPrimeLV(BigNumber):
     def __init__(self, bitSize):
         self.bitSize = bitSize
         while True:
@@ -25,7 +25,7 @@ class BigPrimeLV(BigPrime):
         return True
 
 
-class BigPrimeMC(BigPrime):
+class BigPrimeMC(BigNumber):
     def __init__(self, bitSize, primesUntil=1000, trials=20):
         self.bitSize = bitSize
         while True:
