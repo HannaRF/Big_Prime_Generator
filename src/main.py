@@ -1,7 +1,33 @@
 from primos_grandes import BigPrimeLV, BigPrimeMC
+from crivos import crivo_de_eratostenes, crivo_de_sandaram
 import matplotlib.pyplot as plt
 from Crypto.Util import number
 import time
+
+tam = list(range(1,100000, 100))
+l1, l2, l3 = [], [], []
+
+for n in tam:
+
+    t0 = time.time()
+
+    # Crivo de Erastotenes
+    _ = crivo_de_eratostenes(n)
+    t1 = time.time()
+    l1.append(1000*(t1-t0))
+
+    # Crivo de Sandaram
+    _ = crivo_de_sandaram(n)
+    t2 = time.time()
+    l2.append(1000*(t2-t1))
+
+plt.plot(tam, l1, label="Erasatotenes")
+plt.plot(tam, l2, label="Sandaram")
+plt.title("Tempo de geração de primos com crivos")
+plt.ylabel("Tempo (ms)")
+plt.xlabel("Primos até n")
+plt.legend()
+plt.show()
 
 
 tam = list(range(4,44,2))
